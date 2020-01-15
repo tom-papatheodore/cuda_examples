@@ -41,7 +41,7 @@ __global__ void mat_mul(const float *A, const float *B, float *C, int n) {
 
     for(int i=0; i<n; i++){
       element += A[row * n + i] * B[i * n + col]; // Dot product of row,column
-	}
+    }
 
     C[row * n + col] = element;
   }
